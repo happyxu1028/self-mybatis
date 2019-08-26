@@ -1,5 +1,9 @@
 package com.linshu.exe.mapping;
 
+/**
+ * MappedStatement维护一条<select|update|delete|insert>节点的封装。
+ * @author linshu
+ */
 public class MapperStatement {
 
     private String namespace;

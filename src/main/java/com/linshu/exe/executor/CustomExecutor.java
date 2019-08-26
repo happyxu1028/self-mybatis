@@ -14,6 +14,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * MyBatis执行器，是MyBatis 调度的核心，负责SQL语句的生成和查询缓存的维护。
+ * @author linshu
+ */
 public class CustomExecutor {
 
 

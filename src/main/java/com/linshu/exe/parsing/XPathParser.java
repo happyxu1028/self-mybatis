@@ -60,14 +60,17 @@ public class XPathParser {
             factory.setExpandEntityReferences(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
             builder.setErrorHandler(new ErrorHandler() {
+                @Override
                 public void error(SAXParseException exception) throws SAXException {
                     throw exception;
                 }
 
+                @Override
                 public void fatalError(SAXParseException exception) throws SAXException {
                     throw exception;
                 }
 
+                @Override
                 public void warning(SAXParseException exception) throws SAXException {
                 }
             });

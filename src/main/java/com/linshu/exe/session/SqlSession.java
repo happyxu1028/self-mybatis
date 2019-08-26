@@ -9,7 +9,10 @@ import com.linshu.exe.proxy.MapperProxy;
 import java.lang.reflect.Proxy;
 import java.util.List;
 
-
+/**
+ * 作为MyBatis工作的主要顶层API，表示和数据库交互时的会话，完成必要数据库增删改查功能。
+ * @author linshu
+ */
 public class SqlSession {
 
     private Configuration configuration;
