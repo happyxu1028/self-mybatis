@@ -24,8 +24,10 @@ public class MapperProxy implements InvocationHandler {
         Class<?> returnType = method.getReturnType();
         if(Collections.class.isAssignableFrom(returnType)){
             // 如果返回是集合类型及子类->查询多条数据,返回List
+            //TODO
         }else if(Map.class.isAssignableFrom(returnType)){
             // 返回Map类型
+            //TODO
         }else{
             // 返回对象
             List<Object> dataList = sqlSession.selectList(statementKey, null == args ? null : args[0]);
